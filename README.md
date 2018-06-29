@@ -7,7 +7,7 @@ This package able to Auto implement [intl](https://pub.dartlang.org/packages/int
 ### install
 
 ```yaml
-  intl_yaml: 0.0.1
+  intl_yaml: ^0.0.1
 ```
 
 ### usage
