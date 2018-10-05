@@ -13,7 +13,7 @@ This package able to Auto implement [intl](https://pub.dartlang.org/packages/int
 ### install
 
 ```yaml
-  intl_yaml: ^0.0.1
+  intl_yaml: ^0.0.4
 ```
 
 ### usage
@@ -66,3 +66,12 @@ helloUser:
   --project-name(-p) 'project name(temporary option)';
 ```
 
+## example
+```bash
+flutter pub pub run \
+bin/main.dart \
+--config-dir example/lang \
+--out-lang-dir example/configs \
+--out-service-dir example/services \
+--project-name intl_yaml
+```

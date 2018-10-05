@@ -1,6 +1,6 @@
 name: intl_yaml
 description: Auto implement intl globalization method from yaml.
-version: 0.0.2
+version: 0.0.4
 author: tanakeiQ <tanakei@suitehearts.co>
 homepage: https://github.com/tanakeiQ/intl_yaml
 
