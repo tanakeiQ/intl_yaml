@@ -8,9 +8,10 @@
 
 library intl_yaml;
 
+import 'dart:core';
+
 import 'stub.dart' as Stub;
 import 'stub_file.dart' as StubFile;
-import 'dart:core';
 
 class Parser {
 
@@ -85,7 +86,7 @@ class Parser {
   static List<String> _parseParam(String value) {
     Iterable<Match> params = new RegExp(r'(:.+?(?= |$))').allMatches(value);
 
-    return params.map((v) => v.group(0));
+    return params.map((v) => v.group(0)).toList();
   }
 
   /* File */

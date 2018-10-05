@@ -18,7 +18,7 @@ String named(key, param, value) => "'$key': ($param) => '$value'";
 String namedParam(param) => "\${$param}";
 
 String method(method, param, value, name, {String opt}) => """
-  String $method($param) => Intl.message(
+  String ${param != "" ? '$method($param)' : 'get $method'} => Intl.message(
       '$value',
       locale: _localeName,
       name: '$name'${opt == null ? empty : comma}

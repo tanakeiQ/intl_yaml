@@ -9,14 +9,12 @@
 library intl_yaml;
 
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:dart_config/parsers/config_parser_yaml.dart';
-import 'package:path/path.dart';
-
 import 'package:intl_yaml/parser.dart';
+import 'package:path/path.dart';
+import 'package:yaml/yaml.dart';
 
 class Cmd {
   static String configFile = 'config-file';
@@ -107,18 +105,13 @@ main(List<String> argument) {
 Future<Map> _loadConfigFile(String path) async {
   var completer = new Completer<Map>();
 
-  var errorHandler = (error) => completer.completeError(error);
-
   var file = new File(path);
   bool exists = await file.exists();
 
-
   if (exists) {
-    var _stream = file.openRead();
-    _stream.transform(utf8.decoder).listen((configText) async {
-      Map config = await new YamlConfigParser().parse(configText);
-      completer.complete(config);
-    }, onError: (err) => errorHandler);
+    String yamlString = await file.readAsString();
+    Map yaml = loadYaml(yamlString);
+    completer.complete(yaml);
   } else {
     completer.completeError("${path} does not exist");
   }

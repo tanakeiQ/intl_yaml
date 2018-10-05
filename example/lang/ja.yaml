@@ -1,0 +1,6 @@
+helloUser:
+  value: 'こんにちわ :user'
+  examples:
+    user: 'ゲスト'
+
+test: 'これはテストです'

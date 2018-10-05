@@ -13,3 +13,8 @@ pubspec.lock
 
 .idea
 *.iml
+
+example/*
+!example/configs/.*
+!example/services/.*
+!example/lang

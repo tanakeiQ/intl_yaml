@@ -1,0 +1,6 @@
+helloUser:
+  value: 'hello :user'
+  examples:
+    user: 'Guest'
+
+test: 'This is the test'

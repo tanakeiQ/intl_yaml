@@ -7,15 +7,15 @@ homepage: https://github.com/tanakeiQ/intl_yaml
 dependencies:
   flutter:
     sdk: flutter
-  dart_config: ^0.5.0
-  args: ^1.4.3
-  path: ^1.5.1
+  args: ^1.5.0
+  path: ^1.6.2
+  yaml: ^2.1.15
 
 # dev_dependencies:
 
 environment:
-  sdk: '>=1.19.0 <2.0.0'
-  flutter: ^0.1.2
+  sdk: ">=2.0.0 <3.0.0"
+  flutter: ^0.9.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
