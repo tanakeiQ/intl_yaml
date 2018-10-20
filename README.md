@@ -1,20 +1,10 @@
 ☠ Attention ☠
 
-This package is unverified. I will update later.
-
-このパッケージは未検証です。後日アップデート予定です。
-
 # intl_yaml
 
 This package able to Auto implement [intl](https://pub.dartlang.org/packages/intl) globalization method from yaml.
 
 ## Getting Started
-
-### install
-
-```yaml
-  intl_yaml: ^0.0.4
-```
 
 ### usage
 

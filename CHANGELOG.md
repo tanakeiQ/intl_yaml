@@ -1,3 +1,7 @@
+## [0.0.4] - 2018/10/21
+
+* Update flutter 0.10.x.
+
 ## [0.0.4] - 2018/10/6
 
 * Fixed a bug when installing as pubspec package.
